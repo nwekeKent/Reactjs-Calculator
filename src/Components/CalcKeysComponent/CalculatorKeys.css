@@ -1,0 +1,31 @@
+
+.calc-buttons{
+    height: 75%;
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-gap: none;
+    grid-column: 1/6;
+    grid-template-columns: repeat(4,1fr);
+}
+.calc-buttons button:nth-child(4n){
+    background-color: orange;
+    color: #FFFFFF;
+}
+.calc-buttons button:last-child{
+    background-color: orange;
+    color: #FFFFFF;
+}
+
+.calc-buttons button{
+    font-weight:bolder;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(156, 154, 154);
+    font-size: 20px;
+    font-family: 'josefin sans' , sans-serif;
+}
+
+#zero{
+    grid-column: 1/3;
+}
