@@ -1,6 +1,6 @@
 
 .result-div{
-    background-color:grey;
+    background-color:#77808C;
     height: 25%;
     width: 100%;
     display: flex;
@@ -43,5 +43,5 @@
 
 
 .result-buttons .btn.green{
-    background-color: lightgreen;
+    background-color: #20BF55;
 }

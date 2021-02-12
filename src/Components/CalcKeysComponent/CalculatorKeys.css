@@ -9,11 +9,11 @@
     grid-template-columns: repeat(4,1fr);
 }
 .calc-buttons button:nth-child(4n){
-    background-color: orange;
+    background-color: #FF8811;
     color: #FFFFFF;
 }
 .calc-buttons button:last-child{
-    background-color: orange;
+    background-color: #FF8811;
     color: #FFFFFF;
 }
 
@@ -22,10 +22,25 @@
     outline: none;
     border: none;
     border: 1px solid rgb(156, 154, 154);
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'josefin sans' , sans-serif;
+    background-color: #D8DEF2;
+    cursor: pointer;
 }
-
+.calc-buttons button:hover{
+    background-color: #FFFFFF;
+}
+.calc-buttons button:nth-child(4n):hover{
+    background-color: orange;
+}
+.calc-buttons button:last-child:hover{
+    background-color: orange;
+}
+.calc-buttons button:active{
+    box-shadow: inset -2px -2px 4px  #D8DEF2, inset 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
 #zero{
     grid-column: 1/3;
+    text-align: left;
+    padding-left: 23px;
 }
