@@ -34,9 +34,11 @@ import './App.css'
    }
 
    calculateFn = () => {
-         this.setState({
-            result : eval(this.state.result.replace(/,/g,''))
-         })
+    
+      this.setState({
+         result : eval(this.state.result)
+      })
+        
    }
    negate = () => {
       this.setState({

@@ -28,7 +28,7 @@ const CalculatorKeys = ({buttonPressed}) => {
 
            
             <button  value='0' id="zero" onClick={(e) => {buttonPressed(e.target.value)}}>0</button>
-            <button value=',' onClick={(e) => {buttonPressed(e.target.value)}}>,</button>
+            <button value='.' onClick={(e) => {buttonPressed(e.target.value)}}>.</button>
             <button value='equals' onClick={(e) => {buttonPressed(e.target.value)}}>=</button>
            </div>
     )
