@@ -8,7 +8,7 @@ const CalculatorKeys = ({buttonPressed}) => {
         <div className="calc-buttons">
             <button value='allClear' onClick={(e) => {buttonPressed(e.target.value)}}>AC</button>
             <button value='negate' onClick={(e) => {buttonPressed(e.target.value)}}>+/-</button>
-            <button value='%' onClick={(e) => {buttonPressed(e.target.value)}}>%</button>
+            <button value='percent' onClick={(e) => {buttonPressed(e.target.value)}}>%</button>
             <button value='/' onClick={(e) => {buttonPressed(e.target.value)}}>&#247;</button>
             
             <button value='7' onClick={(e) => {buttonPressed(e.target.value)}}>7</button>
