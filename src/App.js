@@ -19,9 +19,11 @@ import './App.css'
       
       }else if(btnValue === 'negate'){
          this.negate()
+      }else if(btnValue === 'percent'){
+         this.percentage()
       }else{
        this.setState({
-          result : this.state.result + btnValue
+         result : this.state.result + btnValue
        })
       }
       
@@ -36,13 +38,22 @@ import './App.css'
    calculateFn = () => {
     
       this.setState({
+          // eslint-disable-next-line
          result : eval(this.state.result)
+         
       })
+      
         
    }
    negate = () => {
       this.setState({
          result : (this.state.result * -1) 
+      })
+   }
+
+   percentage = () => {
+      this.setState({
+         result : (this.state.result / 100).toString()
       })
    }
     
